@@ -35,7 +35,7 @@ public class Guru99Login {
 
     //Get the title of Login Page
     public String getLoginTitle(){
-        return    driver.findElement(titleText).getText();
+        return driver.findElement(titleText).getText();
     }
 
     public void loginToGuru99(String strUserName,String strPasword){
