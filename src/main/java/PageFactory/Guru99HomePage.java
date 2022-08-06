@@ -20,6 +20,6 @@ public class Guru99HomePage {
 
     //Get the User name from Home Page
     public String getHomePageDashboardUserName(){
-        return    homePageUserName.getText();
+        return homePageUserName.getText();
     }
 }

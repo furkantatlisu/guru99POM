@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 public class Test99GuruLoginWithPageFactory {
-    String driverPath = "C:\\chromedriver.exe";
+    String driverPath = "chromedriver.exe";
     WebDriver driver;
     Guru99Login objLogin;
     Guru99HomePage objHomePage;
@@ -38,6 +38,6 @@ public class Test99GuruLoginWithPageFactory {
         // go the next page
         objHomePage = new Guru99HomePage(driver);
         //Verify home page
-        Assert.assertTrue(objHomePage.getHomePageDashboardUserName().toLowerCase().contains("manger id : mgr123"));
+        Assert.assertTrue(objHomePage.getHomePageDashboardUserName().toLowerCase().contains("manger ıd : mgr123"));
     }
 }
