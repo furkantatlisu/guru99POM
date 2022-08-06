@@ -2,6 +2,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.Guru99HomePage;
@@ -31,6 +32,11 @@ public class Test99GuruLogin {
      * <p>
      * Verify the home page using Dashboard message
      */
+
+    @AfterTest
+    public void shutdown(){
+        driver.quit();
+    }
 
     @Test(priority = 0)
     public void test_Home_Page_Appear_Correct() {
