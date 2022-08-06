@@ -46,7 +46,7 @@ public class Guru99Login {
 
     //Get the title of Login Page
     public String getLoginTitle(){
-        return    titleText.getText();
+        return titleText.getText();
     }
     /**
      * This POM method will be exposed in test case to login in the application
